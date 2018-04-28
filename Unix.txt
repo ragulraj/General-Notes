@@ -1,0 +1,7 @@
+Unix
+To remove contents of folder
+	rm -rf ./.metadata/.plugins/org.eclipse.jdt.core/*
+To go back (Alt + back)
+	cd -
+To search
+	grep -r -H --include=\*.{yml,json} "/demo/"

@@ -1,0 +1,21 @@
+GIT work notes
+	ssh://rt95804@pcf-git-pilot.nam.nsroot.net/repos/NAM-configrepo
+	ssh://rt95804@pcf-git-pilot.nam.nsroot.net/repos/MX-configrepo
+
+	https://cedt-confluence.nam.nsroot.net/confluence/display/CEDT/Using+CEDT+Bitbucket
+
+	https://git-scm.com/docs/user-manual.html
+	https://cedt-confluence.nam.nsroot.net/confluence/display/161972/Git+Client+Install+-+Linux
+	https://git-scm.com/docs/git-http-backend
+
+	Clone
+		git clone ssh://git@cedt-icg-bitbucketcli-uat.nam.nsroot.net:7999/demo/soe-validator.git
+	Checkout
+		git checkout -b <yoursoeid>_stream
+		git status
+	Staging changes
+		git add .
+		git commit -m "- updated the docs"
+	Push
+		git push origin wj33402_stream:wj33402_stream
+

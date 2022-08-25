@@ -1,0 +1,51 @@
+S - Single Responsibility(SRP)
+O - Open Closed Principle(OCP)
+L - Liskov substitution principle(LSP)
+I - Interface seggregation Principle(ISP)
+D - Dependency Inversion
+
+SRP
+    Software should have at most one reason to change
+        This can be achieved by building with high cohesion and less coupling
+    Advantages
+        For any change number of modified component will be less 
+            Reduces testing cost
+            Unintentional bugs
+        It improves resuability
+            Each component has its own purpose, whereever it is needed we can reuse it
+
+Abstraction
+    Hides Implementation details and exposes what is needed
+    In Java abstract class and Interface are used to achieve this
+    Abstraction implementation is also called as realization of abstraction
+    Refer "API abstraction.png"
+    Theorem of Comp Science
+        You can solve any problem by introducing an extra level of indirection(abstraction)
+
+OCP
+    Software entities/module should be open for extension, but closed for modification
+    Alternate definition
+        Protected variation - https://www.martinfowler.com/ieeeSoftware/protectedVariation.pdf
+LSP
+    Variance
+        covariance, contravariance
+    Method Signature Rules
+        Rules about args/result types are based on type casting.
+        Objects received/passed by sub-type should be able to casted based on super-type's contract
+            Args are casted at receiving method, so it should be generic or same
+            Results and exceptions are casted, so it should be specific or same
+        1. Contravariance of args
+            Sub-type method should have equal number of args
+            Type of args should be same or super-type
+        2. Covariance of result
+            Sub-type method should return result if super-type does or not return result if super-type doesn't
+            Type of result should be same or sub-type
+        3. Exception rule
+            Sub-Type can only throw same or sub-type(Specific) of Exception
+    Method Pre & Post condition Rules
+        Pre condition  - Assertion about state of the system before processing
+        Post condition  - Assertion about state of the system after processing
+        Sub-type shouldn't enforce stronger pre-condition
+            Ex: If super-type allowed NULL args in method, then sub-type can't enforce NON-NULL args
+        Sub-type shouldn't allow weaker post-condition
+            Ex: If super-type allowed NULL args in method, then sub-type can't enforce NON-NULL args

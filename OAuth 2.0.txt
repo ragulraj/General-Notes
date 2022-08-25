@@ -1,0 +1,37 @@
+Roles
+    Resource owner
+    User agent
+    Resource server
+    Client (or application)
+    Authorization server
+User Consent
+    1. Instead of client taking user's password and authenticating with authorization server, it is better to redirect users to the 
+    authorization server
+    2. Redirecting to authorization server has below advantages
+        It is easy to add any additional features like MFA etc, instead of adding in hundreds of other pages/flows
+        Trying to authenticate with stored password or trying to perform unauthorizaed operations can be prevented by adding consent screen        
+Application(Client) Type
+    Confidential
+        This can authenticate(with client secret) and its identify can be validated by authorization server
+        It is okay to deploy these apps with client secret
+    Public
+        This includes mobile app and SPA app
+        Never deploy these apps with client secret
+    Credentialed
+        This can authenticate(with client secret) but, its identify can't be validated by authorization server
+        It is okay to deploy these apps with client secret
+        Authorization should take extra care to handle these clients
+Application(Client) Identity
+    Client id is public identity
+    Client secret is identity used by Cofidential client
+    Authorization server relies on Redirect URL to identify public clients
+Channel
+    Ways in which data moves between systems
+        Front & Back channel
+    Front channel
+        Non-HTTPS connection
+        Data is moved in address bar as query string
+        Initially supported due to CORS limitations.
+        Sharing access token in Front channel is called Implicit flow, but is no longer supported
+    Back channel
+        HTTPS connection

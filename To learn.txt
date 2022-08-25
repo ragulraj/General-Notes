@@ -1,0 +1,32 @@
+FSM - Final state machine
+Code complete 2 - Book
+CAP Theorem
+USE method - https://www.brendangregg.com/usemethod.html
+When to use Runtime and compile time exception?
+Helm
+blue-green, canary, and A/B testing what is the difference?
+What is middleware? Why it is called middleware?
+Eventual consistency?
+TDE (transparent data encryption)
+
+This assessment validates knowledge of the practitioners around the NIMO Tech Play, identified for the 100M Core strategy along with associated playbooks and assets.
+
+
+https://pages.github.ibm.com/100mc/nimo-offering-playbook/
+https://pages.github.ibm.com/100mc/mso-offering-playbook/
+https://pages.github.ibm.com/100mc/foundational-offering-playbook/
+https://pages.github.ibm.com/100mc/virt-offering-playbook/
+
+100M Core
+https://bundles.yourlearning.ibm.com/ibm/gbs-cloud-application-innovation/#VQNDXNJZKKWX1R2B
+    https://estimation-engine.ose.ibmsandbox.io/home
+    https://assessment-release.nextgen-ose-85ee131ed8e71cabc202e5781fab5c58-0000.eu-de.containers.appdomain.cloud/
+
+
+Linux
+    There are other users/groups in what is the significance of each?
+
+codewars website
+
+
+Pratical introduction to container terminology
